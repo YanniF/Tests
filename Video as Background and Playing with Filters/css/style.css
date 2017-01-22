@@ -1,0 +1,161 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Calibri, sans-serif;
+}
+
+.background-wrap {
+	position: fixed;
+	z-index: -1000;
+	width: 100%;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+}
+
+#video-bg-elem {	
+	top: 0;
+	left: 0;
+	min-height: 100%;
+	min-width: 100%;
+}
+
+.content {
+	position: absolute;
+	width: 100%;
+	min-height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.content h1 {
+	text-align: center;
+	font-size: 65px;
+	text-transform: uppercase;
+	font-weight: 300;
+	color: #fff;
+	padding-top: 20%;
+	margin-bottom: 10px;
+}
+
+.content p {
+	text-align: center;
+	font-size: 20px;
+	letter-spacing: 3px;
+	color: #aaa;
+}
+
+.btn {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.content a {	
+	padding: 10px 25px;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	color: #aaa;
+	background-color: rgba(255, 255, 255, 0);
+	transition: all 0.2s linear;
+	border: 3px solid #aaa;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.content a:hover {
+	color: #fff;
+	border-color: #fff;
+	background-color: rgba(255, 255, 255, 0);
+	transition: all 0.2s linear;
+}
+
+/* Filters */
+.container {
+	margin: 2% 4%;
+	color:#4a4a4a;
+}
+
+.container h1 {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+figure {
+	margin: 20px 10px 40px;
+	max-width: 420px;
+	float: left;
+	border: 5px solid #fff;
+	border-radius: 5px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+figure img {
+	max-width: 400px;
+	cursor: pointer;
+}
+
+figcaption {
+	padding-bottom: 7px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.image1, .image2, .image3, 
+.image4, .image5, .image6, 
+.image7, .image8, .image9 {
+	transition: all 1.5s linear;
+}
+
+.image1:hover, .image2:hover, .image3:hover, 
+.image4:hover, .image5:hover, .image6:hover, 
+.image7:hover, .image8:hover, .image9:hover {
+	transition: all 0.5s linear;
+}
+
+.image1:hover {
+	filter: grayscale(1);
+}
+
+.image2:hover {
+	-webkit-filter: sepia(1);
+	filter: sepia(1);
+}
+
+.image3:hover {
+	-webkit-filter: saturate(5);
+	filter: saturate(5);
+}
+
+.image4:hover {
+	-webkit-filter: hue-rotate(180deg);
+  	filter: hue-rotate(180deg);
+}
+
+.image5:hover {
+	-webkit-filter: invert(0.8);
+  	filter: invert(0.8);
+}
+
+.image6:hover {
+	-webkit-filter: brightness(4);
+  	filter: brightness(4);
+}
+
+.image7:hover {
+	-webkit-filter: contrast(4);
+  	filter: contrast(4);
+}
+
+.image8:hover {
+	-webkit-filter: opacity(0.2);
+  	filter: opacity(0.2);
+}
+
+.image9:hover {
+	-webkit-filter: blur(5px);
+	filter: blur(5px);
+}
