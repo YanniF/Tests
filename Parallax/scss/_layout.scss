@@ -73,24 +73,53 @@ img {
 
 //Model Grid
 
-.clothes-pics {  
+.clothes-pics {
+  margin-bottom: 80px;
+
   figure {
     margin-bottom: 20px;
     position: relative;
     opacity: 0;
     transform: translateX(20px);
     transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    cursor: pointer;
 
     &.is-showing {
       opacity: 1;
       transform: translateX(0);
     }
+    img {
+      display: block;
+      transform: scale(1);
+      transition: all 0.5s ease-in-out;
+    }
+
+    &:hover {
+      figcaption {
+        left: 0;
+      }
+
+      img {
+        transform: scale(1.2);
+      }
+    }
+  }
+  figcaption {
+    position: absolute;
+    bottom: 10px;
+    left: -100%;
+    background-color: rgba(0,0,0, .8);
+    color: #fff;
+    padding: 2px 8px;
+    font-size: 11px;
+    transition: all 0.5s ease-in-out;
   }
 }
 
 //large-window
 .large-window {
-  height: 500px;
+  height: 640px;
   background-image: url('../img/model2.jpg');
   background-position: top center;
   background-repeat: no-repeat;
