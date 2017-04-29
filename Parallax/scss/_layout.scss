@@ -13,7 +13,7 @@ figure {
 
 .content {
   article {
-    padding: 80px 0;
+    padding: 100px 0;
     max-width: 640px;
     margin: 0 auto;
     text-align: center;
@@ -74,7 +74,7 @@ img {
 //Model Grid
 
 .clothes-pics {
-  margin-bottom: 80px;
+  margin-bottom: 100px;
 
   figure {
     margin-bottom: 20px;
@@ -119,11 +119,59 @@ img {
 
 //large-window
 .large-window {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  position: relative;
   height: 640px;
+  border-radius: 50%;
   background-image: url('../img/model2.jpg');
   background-position: top center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  margin-top: 100px;
-  border-radius: 50%;
+
+  .window-tint {
+    background-color: rgba(0,0,0, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .promo-text {
+    color: #fff;
+    font-weight: 100;
+    font-size: 50px;
+    line-height: 1.2;
+    
+    span {
+      font-weight: 300;
+      font-size: 18px;
+      font-style: italic;
+      color: rgba(255,255,255, 0.6);
+    }
+
+    strong {
+      display: block;
+      font-size: 30px;
+    }
+
+    .window-cta {
+      font-size: 20px;
+      text-decoration: none;
+      color: #fff;
+      border: 1px solid #fff;
+      border-radius: 5px;
+      padding: 10px 20px;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background-color: #fff;
+        color: #000;
+      }
+    }
+  }
 }
