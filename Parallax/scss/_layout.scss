@@ -12,6 +12,11 @@ figure {
 }
 
 .content {
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+  margin-bottom: 400px;
+
   article {
     padding: 100px 0;
     max-width: 640px;
@@ -34,6 +39,7 @@ img {
   background-position: top center;
   background-attachment: fixed;
   overflow: hidden;
+  z-index: 3;
 }
 
 .logo {
@@ -173,5 +179,57 @@ img {
         color: #000;
       }
     }
+  }
+}
+
+//posts
+.blog-posts {
+  margin-top: 100px;
+
+  .post {
+    padding: 20px 20px 0;
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    position: relative;
+  }
+  
+  .post-1 {
+    transform: translate(100px, 20px);
+  }
+  
+  .post-2 {
+    z-index: 2;
+  }
+
+  .post-3 {
+    transform: translate(-100px, 20px);
+  }
+
+  .button {
+    transition: all 0.3s ease-in-out;
+  }
+  .button:hover {
+    background-color: #333;
+    border-color: #333;
+    color: #fff;
+  }
+}
+
+//footer
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+  .footer-stuff {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  a {
+    color: #fff;
   }
 }

@@ -2,6 +2,7 @@ $(window).scroll(function() {
 
 	var wScroll = $(this).scrollTop();//how far it scrolled from the top
 	var wHeight = $(window).height();
+	var largeWindow = $('.large-window').offset().top; 
 
 	$('.logo').css({
 		'transform' : 'translate(0, ' + wScroll/2 + '%)'
@@ -28,10 +29,20 @@ $(window).scroll(function() {
 	}
 
 	//large-window hits the top - the height of the window = the bottom of the window
-	if(wScroll > $('.large-window').offset().top - wHeight) {
-		$('.large-window').css({'background-position':'center '+ wScroll - $('.large-window').offset().top +'px'});
+	if(wScroll > largeWindow - wHeight) {
+		$('.large-window').css({'background-position':'center '+ wScroll - largeWindow +'px'});
 
-		var opacity = (wScroll - $('.large-window').offset().top + 400) / (wScroll / 5);
+		var opacity = (wScroll - largeWindow + 400) / (wScroll / 5);
 		$('.window-tint').css({'opacity' : opacity});
 	}
+
+	if(wScroll > $('.blog-posts').offset().top - wHeight){
+
+	    var offset = Math.min(0, wScroll - $('.blog-posts').offset().top + wHeight - 350);
+
+	    $('.post-1').css({'transform': 'translate('+ offset +'px, '+ Math.abs(offset * 0.2) +'px)'});
+
+	    $('.post-3').css({'transform': 'translate('+ Math.abs(offset) +'px, '+ Math.abs(offset * 0.2) +'px)'});
+
+	  }
 });
