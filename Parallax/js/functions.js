@@ -8,7 +8,7 @@ $(window).scroll(function() {
 	var largeWindow = $('.large-window').offset().top; 
 
 	//there is probably a better way to do it
-	if(wScroll == 0) {
+	if(wScroll === 0) {
 		$(".scroll-top").removeClass('visible').addClass('hidden');
 	}
 	else {
