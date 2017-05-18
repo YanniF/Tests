@@ -1,0 +1,32 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "Site da Marcella",
+  "main": "index.html",
+  "scripts": {
+    "test": "123 Teste"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YanniF/Tests.git"
+  },
+  "keywords": [
+    "Site",
+    "da",
+    "Marcella"
+  ],
+  "author": "Yanni Fraga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YanniF/Tests/issues"
+  },
+  "homepage": "https://github.com/YanniF/Tests#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-ruby-sass": "^2.1.1",
+    "gulp-uglyfly": "^1.4.2"
+  }
+}

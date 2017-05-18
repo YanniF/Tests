@@ -1,0 +1,62 @@
+#sobre,
+#educ, 
+#trabalhos {
+  padding-top: 2.7777em;
+  //padding-bottom: 2.7777em;
+  text-align: justify;
+}
+
+.sobre {
+  @include make-md-column(12);
+
+  .sobre-texto {
+    @include make-md-column(7);
+  }
+
+  figure {
+    @include make-md-column(4);
+    @include make-md-column-offset(1);
+
+    border-radius: 50%;
+  }
+}
+
+#educ {
+  @include make-md-column(12);
+
+  dt {
+    &:before {
+      content: "\0025A3";
+      padding-right: 8px;
+      font-size: 0.8888em;
+      vertical-align: top;
+      color: $cor-destaque;
+    }
+
+    &:not(:first-child) {
+      padding-top: 1.3333em;
+    }
+  }
+}
+
+#trabalhos {
+  @include make-md-column(12);
+  padding-bottom: 2.7777em;
+
+  .pull-left {
+    padding-right: 20px;
+  }
+
+  .pull-right {
+    padding-left: 20px;
+  }
+
+  .trabalho {
+    h2 {
+      margin-top: 2em;
+    }
+    .primeiro {
+      margin-top: -10px;
+    }
+  }
+}

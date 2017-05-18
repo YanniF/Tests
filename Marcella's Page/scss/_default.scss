@@ -1,0 +1,54 @@
+body {	
+	font-family: $fonte;
+	font-size: 18px;
+	position: relative;
+  background-color: #fcfaf4;
+
+	@media screen and (max-width: $resolution-md) {
+		font-size: 16px;
+	}
+}
+
+html,
+body,
+.container-fluid {
+	height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.active {
+  color: $cor-destaque;
+}
+
+textarea { 
+	resize: none; 
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    display: inline-block;
+    margin-top: 2em;
+    padding: 5px 10px;
+    
+    @include botao();
+
+    &:hover {
+      @include botao-hover();
+    }
+  }
+}
+
+.titulo {
+  text-align: center;
+  margin-bottom: 2em;
+
+  h1 {
+    display: inline-block;
+    padding: 5px 10px;
+    border-bottom: 5px solid $cor-destaque;
+  }
+}

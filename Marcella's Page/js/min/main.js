@@ -1,0 +1,1 @@
+$("#myNavbar a").on("click",function(a){if(""!==this.hash){a.preventDefault();var t=this.hash;$("html, body").animate({scrollTop:$(t).offset().top},800)}});

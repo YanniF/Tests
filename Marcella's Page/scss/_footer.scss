@@ -1,0 +1,97 @@
+#contato {
+  padding-top: 2.7777em;
+  height: 100%;
+  min-height: 600px;
+  background-image: url("../img/background.jpg");
+  
+  @include background-imagens();
+  
+  .titulo-back {
+    text-align: center;
+    
+    h1 {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: $cor-destaque;
+      font-weight: 400;
+      color: $cor-oposta;
+    }
+  }
+
+  .form {
+    @include make-md-column(12);
+    color: $cor-oposta;
+    margin-top: 1em;
+  }
+
+  .form-group {
+    font-size: 1.2222em;
+    text-align: left;
+  }
+
+  label {
+    text-shadow: 0 1px 4px rgba(0,0,0,.7);
+  }
+
+  .form-control {
+    font-size: 0.8181em;
+  }
+    
+  .form-group:nth-child(1) {
+    @include make-md-column(4);
+    @include make-md-column-offset(2);
+  }
+
+  .form-group:nth-child(2) {
+    @include make-md-column(4);
+    @include make-md-column-offset(2);
+    @include make-md-column-pull(2);
+  }
+
+  .form-group:nth-child(3) {
+    @include make-md-column(8);
+    @include make-md-column-offset(4);
+    @include make-md-column-pull(2);
+  }
+
+  .form-group:nth-child(4) {
+    @include make-md-column(12);
+    
+    margin-top: 20px;
+    text-align: center;
+
+    .btn {
+      @include botao();
+      
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 1.1111em;
+
+      &:hover {
+        @include botao-hover();
+      }
+
+      i {
+        font-size: 0.7777em;
+      }
+    }
+  }
+
+  .form-control:focus {
+    border-color: rgba($cor-destaque, 0.8);
+    box-shadow: 0 1px 5px rgba($cor-destaque,0.5);
+  }
+
+  .links {
+    @include make-md-column(8);
+    @include make-md-column-offset(4);
+    @include make-md-column-pull(2); 
+
+    justify-content: space-around;
+    margin-bottom: 10px;
+
+    a {
+      margin-top: 1em;
+    }
+  }
+}

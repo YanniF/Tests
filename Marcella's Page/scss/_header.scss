@@ -1,0 +1,71 @@
+.navbar {
+  height: 70px;
+  background-color: rgba(0,0,0, .6);
+
+  .navbar-header {
+    .navbar-toggle {
+      border-color: $cor-oposta;
+      border-width: 2px;
+    }
+    .icon-bar {
+      background-color: $cor-oposta;
+    }
+  }
+  #myNavbar {
+    text-align: center;
+
+    .navbar-nav {
+      float: none;
+      display: inline-block;
+      vertical-align: top;
+
+      li {
+        a {
+          color: $cor-fundo;
+          font-size: 1.1111em;
+          padding-top: 30px;
+          padding-top: 30px;
+          transition: all .3s linear;
+
+          &:hover,
+          &:focus {
+            background-color: transparent;
+          }
+
+          &:hover {
+            @extend .active;
+          }
+        }
+        &.active {
+          a {
+             @extend .active;
+           }
+        }
+      }
+    }
+  }
+}//navbar
+
+header {
+  height: 100%;
+  min-height: 600px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/background.jpg");
+  
+  @include background-imagens();
+
+  p {
+    padding: 10px 20px;
+    text-align: center;
+    background-color: $cor-destaque;
+    color: $cor-oposta;
+
+    &:first-child {
+      font-size: 1.7777em;
+    }
+  }
+}

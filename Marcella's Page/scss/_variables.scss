@@ -1,0 +1,30 @@
+$fonte: 'Raleway', sans-serif;
+
+$cor-fundo: #e8dab3;
+$cor-fundo-clara: #fcfaf4;
+$cor-destaque: #f93b55;
+$cor-oposta: #fff;
+
+$resolution-xs: 300px;
+$resolution-sm: 768px;
+$resolution-md: 992px;
+
+@mixin background-imagens {
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+@mixin botao {
+  border: 2px solid $cor-destaque;
+  border-radius: 5px;
+  background-color: rgba(255,255,255, .3);
+  color: $cor-destaque;
+  transition: all .3s ease-in;
+}
+
+@mixin botao-hover {
+  background-color: $cor-destaque;
+  color: $cor-fundo;
+}
