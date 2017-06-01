@@ -1,0 +1,129 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #333;
+  font-family: Helvetica, sans-serif;
+  padding: 50px 10%;
+}
+
+h1 {
+  font-size: 2.4em;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+button {
+  background-color: #046380;
+  color: #FFF;
+  border: none;
+  padding: 10px 15px;
+  font-size: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 2px 2px 0 #034154;
+  margin-bottom: 10px;
+  margin-left: 18px;
+  position: relative;
+  top: -10px;
+  transition: opacity .4s ease-out, transform .4s ease-out, visibility .4s ease-out;
+}
+
+button:hover {
+  background-color: #034F66;
+}
+
+button:active {
+  background-color: #034154;
+  box-shadow: none;
+  left: 2px;
+  position: relative;
+  top: -8px;
+}
+
+p {
+  border-bottom: 1px dotted #DDD;
+  line-height: 1.7;
+  list-style: none;
+  margin: 0;
+  padding: 50px 0;
+}
+
+.blue-eyes .eye-color {
+  fill: #175282;
+}
+
+.sad .mouth {
+  transform: rotate(180deg) scale(.5);
+  transform-origin: 340px 390px;
+}
+
+.move-around .inner-eye-group {
+  animation: moveEyes 12s infinite;
+}
+
+.move-around .left-whiskers {
+  animation: leftWhiskers 3s infinite;
+  transform-origin: 325px 350px;
+}
+
+.move-around .right-whiskers {
+  animation: rightWhiskers 3s infinite;
+  transform-origin: 325px 350px;
+}
+
+.move-around {
+  animation: move 8s infinite;
+}
+
+.svg-container {
+  perspective: 1000px;
+}
+
+@keyframes moveEyes {
+  20% {
+    transform: translate(-18px, -20px);
+  }
+  40% {
+    transform: translate(0, 0);
+  }
+  65% {
+    transform: translate(18px, 0);
+  }
+}
+
+@keyframes leftWhiskers {
+  20% {
+    transform: rotate(5deg);
+  }
+  60% {
+    transform: rotate(-5deg);
+  }
+}
+
+@keyframes rightWhiskers {
+  5% {
+    transform: rotate(-2deg);
+  }
+  90% {
+    transform: rotate(7deg);
+  }
+}
+
+@keyframes move {
+  20% {
+    transform: rotateY(10deg) rotateX(10deg);
+  }
+  40% {
+    transform: rotateY(25deg) rotateX(10deg);
+  }
+  60% {
+    transform: rotateY(-10deg) rotateX(-10deg);
+  }
+  85% {
+    transform: rotateY(-10deg) rotateX(-16deg);
+  }
+}

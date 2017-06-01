@@ -8,5 +8,6 @@ Repository for tests (usually front-end)
 - JSON and AJAX
 - Marcella's Page
 - Parallax
+- SVG Cat
 - Video as Background for a Section of a Website
 - Video as Background and Playing with Filters
