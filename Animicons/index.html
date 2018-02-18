@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Font Awesome Icons Animated</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Animated Icons</h1>
+  <div class="grid-container">
+    <div class="grid-item">
+     <div id="chain" class="fa"></div>
+    </div>
+    <div class="grid-item">
+     <div id="battery" class="fa"></div>
+    </div>
+    <div class="grid-item">
+     <div id="hourglass" class="fa"></div>
+    </div>
+    <div class="grid-item">
+     <div id="jokenpo" class="fa"></div>
+    </div>
+  </div>
+    
+	<script>
+    // Brake Chain Animation
+		function brakeChain() {
+			let chain = document.getElementById('chain');
+			chain.innerHTML = "&#xf0c1;";//Unicode
+
+      setTimeout(function() {
+        chain.innerHTML = "&#xf127;";
+      }, 1000)
+		}
+
+    // Call Animation
+    brakeChain();
+
+    // Animate every 2 seconds
+    setInterval(brakeChain, 2000);
+
+    //Battery Charge Animation
+    function chargeBattery() {
+      let battery = document.getElementById('battery');
+      battery.innerHTML = "&#xf244;";
+
+      setTimeout(function() {
+        battery.innerHTML = "&#xf243;";
+      }, 1000);
+
+      setTimeout(function() {
+        battery.innerHTML = "&#xf242;";
+      }, 2000);
+
+      setTimeout(function() {
+        battery.innerHTML = "&#xf241;";
+      }, 3000);
+
+      setTimeout(function() {
+        battery.innerHTML = "&#xf240;";
+      }, 4000);
+    }
+
+    // Run animation
+    chargeBattery();
+
+    // Run animation every 5 seconds
+    setInterval(chargeBattery, 5000);
+
+    // Hourglass
+    function hourglassTip() {
+      let hourglass = document.getElementById('hourglass');
+      hourglass.innerHTML = "&#xf251;";
+
+      setTimeout(function() {
+        hourglass.innerHTML = '&#xf252;';
+      }, 1000);
+
+      setTimeout(function() {
+        hourglass.innerHTML = '&#xf253;';
+      }, 2000);
+    }
+    hourglassTip();
+
+    setInterval(hourglassTip, 3000);
+
+    //jokenpo
+    function playJokenpo() {
+      let jokenpo = document.getElementById('jokenpo');
+      jokenpo.innerHTML = '&#xf255;';
+
+      setTimeout(function() {
+        jokenpo.innerHTML = '&#xf256;';
+      }, 1000);
+
+      setTimeout(function() {
+        jokenpo.innerHTML = '&#xf257;';
+      }, 2000);
+    }
+
+    playJokenpo();
+
+    setInterval(playJokenpo, 3000);
+	</script>
+</body>
+</html>
+<!-- https://www.youtube.com/watch?v=XP-MRCUPZao -->

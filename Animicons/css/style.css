@@ -1,0 +1,30 @@
+body {
+  color: #333;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.grid-item {
+  padding: 20px;
+  margin: 20px auto;
+  width: 120px;
+  background-color: #E0E0E0FF;
+  border: 1px solid #D8D8D8FF;
+  border-radius: 5px;
+  text-align: center;
+}
+
+h1 {
+  font-family: Tahoma, sans-serif;
+  text-align: center;
+  margin: 50px 20px;
+}
+
+.fa {
+	font-size: 60px;
+}
