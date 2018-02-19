@@ -1,0 +1,29 @@
+body, 
+html {
+  background-color: #292D3E;
+  height: 100%;
+  margin: 0;
+  font: normal 16px Arial, Helvetica, sans-serif;
+}
+
+#login {
+  background-color: #fff;
+  opacity: .9;
+  padding: 2em;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+}
+
+#login input[type="text"],
+#login input[type="password"] {
+  padding: 7px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+#login input[type="submit"] {
+  padding: 3px 15px;
+}

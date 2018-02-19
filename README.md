@@ -9,6 +9,7 @@ Repository for tests (usually front-end)
 - JSON and AJAX
 - Marcella's Page
 - Parallax
+- Particles.js
 - Split Screen Slider
 - SVG Cat
 - Video as Background for a Section of a Website

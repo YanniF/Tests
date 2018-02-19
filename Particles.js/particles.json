@@ -1,0 +1,30 @@
+{
+  "particles": {
+    "number": {
+      "value": 250
+    },
+    "shape": {
+      "stroke": {
+        "width": 2,
+        "color": "#ccc"
+      } 
+    },
+    "size": {
+      "value": 5
+    }
+  },
+  "interactivity": {
+    "events": {
+      "onhover": {
+        "enable": "true",
+        "mode": "repulse"
+      }
+    },
+    "modes": {
+      "repulse": {
+        "distance": 50,
+        "duration": 0.4
+      }
+    }
+  }
+}

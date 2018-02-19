@@ -6,13 +6,12 @@ document.addEventListener('DOMContentLoaded', function() {
   let delta = 0;
 
   if(wrapper.className.indexOf('skewed') != -1) {
-    skew = 1000;
+    skew = 1000; //valor do .skewed
   }
 
   wrapper.addEventListener('mousemove', function(e) {
-    delta = (e.clientX - window.innerWidth / 2) * .5;
+    delta = (e.clientX - window.innerWidth / 1.5) * .5;
     handle.style.left = e.clientX + delta + 'px';
-
     topLayer.style.width = e.clientX + skew + delta + 'px';
   });
 });
