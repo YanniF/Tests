@@ -1,0 +1,17 @@
+// variaveis
+$cor-titulo: $gray-800; // bootstrap/variables
+$cor-fundo: #f5f5f5;
+$cor-detalhes: #3a6fbe;
+
+html {  
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: $cor-fundo;
+}
+
+ul {
+  list-style: none;
+}
