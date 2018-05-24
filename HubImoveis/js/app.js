@@ -10,10 +10,8 @@ function carregarImoveis() {
     imoveis = info.data.content;
     
     imoveis.forEach(imovel => {
-      console.log(`${imovel.title} \n ${imovel.city} - ${imovel.state} \n ${imovel.neighborhood}`);
-    });
-
-    
+      console.log(`${imovel.title} \n${imovel.city} - ${imovel.state} \n${imovel.neighborhood}`);
+    });    
   })
   .catch(err => {
     console.log('Erro: ' + err);

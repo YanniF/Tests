@@ -1,31 +1,14 @@
-.nav {
-  position: fixed;
-  right: 3rem;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  span {
-    display: inline-block;
-    width: 1.4rem;
-    height: 1.4rem;
-    margin-bottom: .5rem;
-    background-color: lighten($cor-detalhes, 20%);
-    border-radius: 50%;
-
-    &.active {
-      background-color: $cor-detalhes;
-    }
-  }
-}
-
-.home {
+.home {  
   margin: 3rem;
   
   h2 {
     margin-bottom: 3rem;
     font-size: 2.8rem;
     color: $cor-titulo;
+  }
+  .slider-imagens {
+    @include make-col(12);
+
+    display: flex;
   }
 }
