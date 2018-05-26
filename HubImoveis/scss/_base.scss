@@ -1,7 +1,6 @@
 // variaveis
-$cor-titulo: $gray-800; // bootstrap/variables
-$cor-fundo: #f5f5f5;
-$cor-detalhes: #3a6fbe;
+$cor-bkg: #f5f5f5;
+$cor-details: #3a6fbe;
 
 html {  
   font-size: 62.5%;
@@ -9,7 +8,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  background-color: $cor-fundo;
+  background-color: $cor-bkg;
 }
 
 ul {
@@ -29,11 +28,11 @@ ul {
     width: 1.4rem;
     height: 1.4rem;
     margin-bottom: .5rem;
-    background-color: lighten($cor-detalhes, 20%);
+    background-color: lighten($cor-details, 20%);
     border-radius: 50%;
 
     &.active {
-      background-color: $cor-detalhes;
+      background-color: $cor-details;
     }
   }
 }
