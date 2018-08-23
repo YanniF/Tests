@@ -9,6 +9,7 @@ Repository for tests (usually front-end)
 - HubImoveis
 - JSON and AJAX
 - Marcella's Page
+- Moving Background Image
 - Parallax
 - Particles.js
 - Split Screen Slider
