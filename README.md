@@ -8,6 +8,7 @@ Repository for tests (usually front-end)
 - Font Awesome Icons Animated
 - JSON and AJAX
 - Marcella's Page
+- Moving Background Image
 - Parallax
 - Particles.js
 - Split Screen Slider
