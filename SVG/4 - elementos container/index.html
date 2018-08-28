@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SVG</title>
+</head>
+<style>
+  body {
+    margin: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .container {
+    display: flex;
+  }
+  h2 {
+    margin-top: 50px;
+  }
+</style>
+
+<body>
+  <h1>Elementos Container</h1>
+  <div class="container">
+    <div>
+      <h2>Defs</h2>
+      <svg>
+        <defs>
+          <circle id="circulo" r="25" cx="120" cy="50" />
+        </defs>
+        <use xlink:href="#circulo" />
+        <use xlink:href="#circulo" x="70" fill="gray" />
+      </svg>
+    </div>
+    <div>
+      <h2>Group - g</h2>
+      <svg>
+        <g fill="crimson">
+          <circle r="25" cx="120" cy="50" />
+          <circle r="25" cx="230" cy="50" />
+        </g>
+      </svg>
+    </div>
+    <div>
+      <h2>Symbol</h2>
+      <svg>
+        <symbol id="circulo2" viewBox="0 0 600 300">
+          <circle r="25" cx="120" cy="50" />
+        </symbol>
+        <use xlink:href="#circulo2" />
+        <use xlink:href="#circulo2" x="70" fill="lightgreen" />
+      </svg>
+    </div>
+  </div>
+</body>
+
+</html>
