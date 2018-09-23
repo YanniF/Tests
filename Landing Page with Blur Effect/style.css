@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  background-color: rgba(0,0,0, .8);
+  color: #f4f4f4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.showcase::after {
+  content: '';
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0, .4), rgba(0,0,0, .4)), url('back.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  filter: blur(7px);
+  transition: all .8s;
+}
+
+.showcase:hover::after {
+  filter: blur(0);
+}
+
+.showcase:hover .content {
+  filter: blur(2px);
+}
+
+.content {
+  position: absolute;
+  z-index: 10;
+  top: 10%;
+  left: 50%;
+  margin-top: 105px;
+  margin-left: -145px;
+  width: 350px;
+  height: 350px;
+  text-align: center;
+  transition: all .8s;
+}
+
+.content .logo {
+  height: 180px;
+  width: 180px;
+}
+
+.content .title {
+  font-size: 2.2rem;
+  margin-top: 1rem;
+}
+
+.content .text {
+  margin-top: 1rem;
+  line-height: 1.7;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding: 4rem 1rem;
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+  color: #f4f4f4;
+  overflow: hidden;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 4px;
+  right: 0;
+  bottom: -5px;
+  background-color: #f4f4f4;
+  transition: all .3s cubic-bezier(.05,.56,.7,.61);
+}
+
+a:hover::after {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
+
+.footer {
+  padding: 2.2rem;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.grid-3 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-2 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.bg-light {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background-color: #333;
+  color: #f4f4f4;
+}
+
+/* small screens */
+@media(max-width: 560px) {
+
+  .showcase::after {
+    height: 50vh;
+  }
+
+  .content {
+    top: 5%;
+    margin-top: 5px;
+  }
+
+  .content .logo {
+    height: 120px;
+    width: 120px;
+  }
+
+  .content .text {
+    display: none;
+    font-size: 1.6rem;
+  }
+
+  .grid-2,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .services div:not(:last-child) {
+    padding: 1.2rem 1rem;
+    border-bottom: 1px dashed #5a5a5a;
+  }
+}
+
+/* landscape */
+
+@media(max-height: 500px) {
+  .content .title,
+  .content .text {
+    display: none;
+  }
+
+  .content {
+    top: 0;
+  }
+}
