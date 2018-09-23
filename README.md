@@ -7,7 +7,6 @@ Repository for tests (usually front-end)
 - Fixed Background Scrolling
 - Font Awesome Icons Animated
 - HubImoveis
-- JSON and AJAX
 - Marcella's Page
 - Moving Background Image
 - Parallax
