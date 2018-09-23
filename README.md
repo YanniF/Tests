@@ -6,7 +6,7 @@ Repository for tests (usually front-end)
 - CSS Full Screen Slider
 - Fixed Background Scrolling
 - Font Awesome Icons Animated
-- JSON and AJAX
+- Landing Page with Blur Effect
 - Marcella's Page
 - Moving Background Image
 - Parallax
@@ -15,4 +15,3 @@ Repository for tests (usually front-end)
 - SVG Cat
 - Video as Background for a Section of a Website
 - Video as Background and Playing with Filters
-
