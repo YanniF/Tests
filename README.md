@@ -13,6 +13,7 @@ Repository for tests (usually front-end)
 - Particles.js
 - Split Screen Slider
 - SVG Cat
+- Type Writer Effect
 - Video as Background for a Section of a Website
 - Video as Background and Playing with Filters
 
