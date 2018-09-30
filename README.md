@@ -4,6 +4,7 @@ https://yannif.github.io/Tests/
 Repository for tests (usually front-end)
 - Animate text over images
 - CSS Full Screen Slider
+- Drag and Drop
 - Fixed Background Scrolling
 - Font Awesome Icons Animated
 - HubImoveis
@@ -11,6 +12,7 @@ Repository for tests (usually front-end)
 - Moving Background Image
 - Parallax
 - Particles.js
+- Social Media Accordion
 - Split Screen Slider
 - SVG Cat
 - Type Writer Effect
