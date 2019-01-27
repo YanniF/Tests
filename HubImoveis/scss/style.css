@@ -1,0 +1,166 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #f5f5f5;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav {
+  position: fixed;
+  right: 3rem;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav span {
+  display: inline-block;
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-bottom: .5rem;
+  background-color: #84a7da;
+  border-radius: 50%;
+}
+
+.nav span.active {
+  background-color: #3a6fbe;
+}
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  padding: 3rem;
+}
+
+.home h2 {
+  margin-bottom: 4rem;
+  font-size: 2.8rem;
+}
+
+.home .slider-imagens {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.home .slider-imagens figure {
+  position: relative;
+}
+
+.home .slider-imagens figure > img {
+  width: 100%;
+  -webkit-clip-path: inset(0 10% 0 10% round 10px);
+          clip-path: inset(0 10% 0 10% round 10px);
+  border-radius: 1.5rem;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.home .slider-imagens figure > img.slick-active {
+  -webkit-clip-path: inset(0 0 0 0 round 10px);
+          clip-path: inset(0 0 0 0 round 10px);
+}
+
+.home .slider-imagens figure .logo {
+  height: 5rem;
+  width: auto;
+  float: right;
+}
+
+.home .slider-imagens figcaption {
+  position: absolute;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(30%, rgba(245, 245, 245, 0.8)));
+  background-image: linear-gradient(to bottom, transparent, rgba(245, 245, 245, 0.8) 30%);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 6rem;
+  font-weight: 600;
+}
+
+.home .slider-imagens figcaption h3 {
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+
+.home .slider-imagens figcaption p {
+  margin-bottom: 0;
+}
+
+.slick-arrow {
+  position: absolute;
+  bottom: -6rem;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  font-size: 0;
+  font-weight: 600;
+  color: #3a6fbe;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.slick-next,
+.slick-next:before {
+  right: 45%;
+}
+
+.slick-prev,
+.slick-prev:before {
+  left: 45%;
+}
+
+.slick-prev:before {
+  content: '<';
+  font-size: 2.5rem;
+}
+
+.slick-next:before {
+  content: '>';
+  font-size: 2.5rem;
+}
+
+.controls {
+  display: table;
+  margin-top: 2rem;
+  height: 5rem;
+  width: 5rem;
+  color: #3a6fbe;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+}
+
+.controls span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 600;
+}
+/*# sourceMappingURL=style.css.map */

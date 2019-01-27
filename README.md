@@ -4,6 +4,7 @@ https://yannif.github.io/Tests/
 Repository for tests (usually front-end)
 - Animate text over images
 - CSS Full Screen Slider
+- Custom Cursors
 - Drag and Drop
 - Fixed Background Scrolling
 - Font Awesome Icons Animated
