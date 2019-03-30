@@ -8,6 +8,7 @@ Repository for tests (usually front-end)
 - Drag and Drop
 - Fixed Background Scrolling
 - Font Awesome Icons Animated
+- GSAP TweenMax
 - Landing Page with Blur Effect
 - Marcella's Page
 - Moving Background Image
