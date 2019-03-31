@@ -8,7 +8,13 @@ Repository for tests (usually front-end)
 - Drag and Drop
 - Fixed Background Scrolling
 - Font Awesome Icons Animated
+<<<<<<< HEAD
 - HubImoveis
+=======
+- GSAP TimelineLite
+- GSAP TweenMax
+- Landing Page with Blur Effect
+>>>>>>> master
 - Marcella's Page
 - Moving Background Image
 - Parallax
