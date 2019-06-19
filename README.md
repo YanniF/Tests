@@ -10,6 +10,7 @@ Repository for tests (usually front-end)
 - Font Awesome Icons Animated
 - GSAP TimelineLite
 - GSAP TweenMax
+- Hamburger Menu
 - Landing Page with Blur Effect
 - Marcella's Page
 - Moving Background Image
