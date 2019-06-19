@@ -23,6 +23,7 @@ Repository for tests (usually front-end)
 - Social Media Accordion
 - Split Screen Slider
 - SVG Cat
+- Timeline
 - Type Writer Effect
 - Video as Background for a Section of a Website
 - Video as Background and Playing with Filters
