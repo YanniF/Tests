@@ -14,6 +14,7 @@ Repository for tests (usually front-end)
 - GSAP TimelineLite
 - GSAP TweenMax
 - Hamburger Menu
+- Horizontal Scroll
 - Landing Page with Blur Effect
 >>>>>>> master
 - Marcella's Page
