@@ -1,0 +1,64 @@
+body {
+	margin: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: #444;
+	background-color: #444;
+}
+
+.slide {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background-position: center;
+	background-size: cover;
+}
+.wrapper {
+	display: flex;
+	flex-direction: row;
+	width: 500vw; /* width of all slides (number of slides * 100) */
+	transform: rotate(90deg) translateY(-100vh);
+	transform-origin: top left;
+}
+
+.outer-wrapper {
+	position: absolute;
+	width: 100vh;
+	height: 100vw;
+	transform: rotate(-90deg) translateX(-100vh);
+	transform-origin: top left;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+.one {
+	background-image: url('https://source.unsplash.com/1600x900/?vancouver');
+}
+.two {
+	background-image: url('https://source.unsplash.com/1600x900/?banff');
+}
+.three {
+	background-image: url('https://source.unsplash.com/1600x900/?whistler');
+}
+.four {
+	background-image: url('https://source.unsplash.com/1600x900/?montreal');
+}
+.five {
+	background-image: url('https://source.unsplash.com/1600x900/?prince-edward-island');
+}
+
+.place {
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	padding: 10px 20px;
+	background-color: #f0efef;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
