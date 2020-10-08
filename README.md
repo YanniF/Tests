@@ -3,6 +3,7 @@ https://yannif.github.io/Tests/
 
 Repository for tests (usually front-end)
 - Animate text over images
+- Animating CSS Perspectives
 - CSS Full Screen Slider
 - Custom Cursors
 - Drag and Drop
