@@ -15,6 +15,7 @@ Repository for tests (usually front-end)
 - Horizontal Scroll
 - Landing Page with Blur Effect
 - Marcella's Page
+- Micro Interaction Button
 - Moving Background Image
 - Parallax
 - Particles.js
