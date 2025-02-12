@@ -24,6 +24,7 @@ Repository for tests (usually front-end)
 - SVG Cat
 - Threejs Points Material Earth
 - Threejs Vertex Earth - Shader
+- Threejs Scroll Animation
 - Timeline
 - Type Writer Effect
 - Video as Background for a Section of a Website
