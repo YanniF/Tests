@@ -23,8 +23,9 @@ Repository for tests (usually front-end)
 - Split Screen Slider
 - SVG Cat
 - Threejs Points Material Earth
-- Threejs Vertex Earth - Shader
 - Threejs Scroll Animation
+- Threejs Spinning Neon Cubes
+- Threejs Vertex Earth - Shader
 - Timeline
 - Type Writer Effect
 - Video as Background for a Section of a Website
