@@ -46,16 +46,6 @@ fetch('./test_geojson/countries.json')
     }, planet);
   });
 
-// fetch("./test_geojson/world_highways.geojson")
-//   .then((resp) => resp.text())
-//   .then((text) => {
-//     const data = JSON.parse(text);
-//
-//     drawThreeGeo(data, 10, 'sphere', {
-//       color: '#8080FF'
-//     }, planet);
-//   });
-
 const animate = () => {
   requestAnimationFrame(animate)
 
