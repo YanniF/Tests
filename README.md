@@ -14,14 +14,13 @@ Repository for tests (usually front-end)
 - Hamburger Menu
 - Horizontal Scroll
 - Landing Page with Blur Effect
-- Marcella's Page
 - Micro Interaction Button
 - Moving Background Image
 - Parallax
 - Particles.js
 - Social Media Accordion
 - Split Screen Slider
-- SVG Cat
+- Threejs 3D Globe
 - Threejs Points Material Earth
 - Threejs Scroll Animation
 - Threejs Spinning Neon Cubes
