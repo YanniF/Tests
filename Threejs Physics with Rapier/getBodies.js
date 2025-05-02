@@ -2,7 +2,7 @@ import * as THREE from "three";
 
 const sceneMiddle = new THREE.Vector3(0, 0, 0);
 
-function getBody(RAPIER, world) {
+function getBody(RAPIER, world, hasWireframe = false) {
   const size = 0.1 + Math.random() * 0.25;
   const range = 6;
   const density = size;
@@ -24,13 +24,15 @@ function getBody(RAPIER, world) {
   });
   const mesh = new THREE.Mesh(geometry, material);
 
-  const wireframeMaterial = new THREE.MeshBasicMaterial({
-    color: 0x990000,
-    wireframe: true
-  });
-  const wireframeMesh = new THREE.Mesh(geometry, wireframeMaterial);
-  wireframeMesh.scale.setScalar(1.01);
-  mesh.add(wireframeMesh);
+  if (hasWireframe) {
+    const wireframeMaterial = new THREE.MeshBasicMaterial({
+      color: 0x990000,
+      wireframe: true
+    });
+    const wireframeMesh = new THREE.Mesh(geometry, wireframeMaterial);
+    wireframeMesh.scale.setScalar(1.01);
+    mesh.add(wireframeMesh);
+  }
 
   function update() {
     rigid.resetForces(true);
@@ -51,24 +53,24 @@ function getBody(RAPIER, world) {
 }
 
 function getMouseBall(RAPIER, world) {
-  const mouseSize = 0.25;
+  const mouseSize = 0.3;
   const geometry = new THREE.IcosahedronGeometry(mouseSize, 8);
   const material = new THREE.MeshStandardMaterial({
     color: '#ffffff',
-    emissive: '#ffffff',
+    emissive: '#f199ca',
   });
-  const mouseLight = new THREE.PointLight(0xffffff, 1);
+  const mouseLight = new THREE.PointLight('#f199ca', 1);
   const mouseMesh = new THREE.Mesh(geometry, material);
   mouseMesh.add(mouseLight);
 
-  // RIGID BODY
+  // rigid body
   let bodyDesc = RAPIER.RigidBodyDesc.kinematicPositionBased().setTranslation(0, 0, 0)
   let mouseRigid = world.createRigidBody(bodyDesc);
-  let dynamicCollider = RAPIER.ColliderDesc.ball(mouseSize * 3.0);
+  let dynamicCollider = RAPIER.ColliderDesc.ball(mouseSize * 3.0); // collider area
   world.createCollider(dynamicCollider, mouseRigid);
 
   function update(mousePos) {
-    mouseRigid.setTranslation({x: mousePos.x * 5, y: mousePos.y * 5, z: 0.2});
+    mouseRigid.setTranslation({x: mousePos.x * 8, y: mousePos.y * 8, z: 0.2});
 
     let {x, y, z} = mouseRigid.translation();
     mouseMesh.position.set(x, y, z);

@@ -1,6 +1,6 @@
 import * as THREE from "three";
 import {getBody, getMouseBall} from "./getBodies.js";
-import RAPIER from 'https://cdn.skypack.dev/@dimforge/rapier3d-compat@0.11.2';
+import RAPIER from 'rapier';
 import {EffectComposer} from "jsm/postprocessing/EffectComposer.js";
 import {RenderPass} from "jsm/postprocessing/RenderPass.js";
 import {UnrealBloomPass} from "jsm/postprocessing/UnrealBloomPass.js"
@@ -23,18 +23,18 @@ const world = new RAPIER.World(gravity);
 let mousePos = new THREE.Vector2();
 
 // post-processing
-const renderScene = new RenderPass(scene, camera);
-// resolution, strength, radius, threshold
-const bloomPass = new UnrealBloomPass(new THREE.Vector2(windowWidth, windowHeight), 1.5, 0.0, 0.005);
+const renderPass = new RenderPass(scene, camera);
+const bloomPass = new UnrealBloomPass(new THREE.Vector2(windowWidth, windowHeight), 1.5, 0.0, 0.005); // resolution, strength, radius, threshold
 const composer = new EffectComposer(renderer);
-composer.addPass(renderScene);
+
+composer.addPass(renderPass);
 composer.addPass(bloomPass);
 
-const hemiLight = new THREE.HemisphereLight('#00bbff', '#aa00ff');
-hemiLight.intensity = 0.2;
+const hemiLight = new THREE.HemisphereLight('#57c9ff', '#bc3eff');
+hemiLight.intensity = 0.5;
 scene.add(hemiLight);
 
-const numBodies = 100;
+const numBodies = 110;
 const bodies = [];
 
 for (let i = 0; i < numBodies; i++) {
@@ -46,8 +46,6 @@ for (let i = 0; i < numBodies; i++) {
 
 const mouseBall = getMouseBall(RAPIER, world);
 scene.add(mouseBall.mesh);
-
-
 
 const animate = () => {
   requestAnimationFrame(animate);
