@@ -21,6 +21,7 @@ Repository for tests (usually front-end)
 - Social Media Accordion
 - Split Screen Slider
 - Threejs 3D Globe
+- Threejs Physics with Rapier
 - Threejs Points Material Earth
 - Threejs Scroll Animation
 - Threejs Spinning Neon Cubes
