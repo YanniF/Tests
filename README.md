@@ -7,7 +7,6 @@ Repository for tests (usually front-end)
 - CSS Full Screen Slider
 - Custom Cursors
 - Drag and Drop
-- Fixed Background Scrolling
 - Font Awesome Icons Animated
 - GSAP TimelineLite
 - GSAP TweenMax
@@ -27,6 +26,6 @@ Repository for tests (usually front-end)
 - Threejs Spinning Neon Cubes
 - Threejs Vertex Earth - Shader
 - Timeline
-- Type Writer Effect
+- Typewriter Effect
 - Video as Background for a Section of a Website
 - Video as Background and Playing with Filters
